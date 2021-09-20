@@ -3,3 +3,4 @@ app
 app.dwarf
 .sass-cache
 docker/*
+.env
