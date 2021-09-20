@@ -1,8 +1,7 @@
 require "../db"
 
 get "/" do
-  #books = select_all_data
-  books = [] of String
+  books = select_all_data
   view("site/index")
 end
 
