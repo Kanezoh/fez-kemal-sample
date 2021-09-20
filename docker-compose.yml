@@ -1,0 +1,16 @@
+   version: '3'
+
+   services:
+     db:
+       image: mysql:5.7
+       container_name: mysql_container
+       environment:
+         MYSQL_ROOT_PASSWORD: mypassword
+         MYSQL_DATABASE: kanezoh_blog
+         MYSQL_USER: admin
+         MYSQL_PASSWORD: mypassword
+       volumes:
+       - ./docker/db/data:/var/lib/mysql
+       - ./docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
+       ports:
+       - 9999:3306
