@@ -2,5 +2,5 @@ lib/
 app
 app.dwarf
 .sass-cache
-docker/*
+docker/db/data/*
 .env
