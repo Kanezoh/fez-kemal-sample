@@ -1,7 +1,7 @@
-require "../db"
+require "./models/db.cr"
 
 get "/" do
-  books = select_all_data
+  articles = Article.fetch_all
   view("site/index")
 end
 
