@@ -1,2 +1,11 @@
-.thumbnail {
+html {
+  min-height: 100%
+}
+.hoge {
+  background-image: url("/wahu.jpg");
+  background-color:rgba(255,255,255,0.4);
+  background-blend-mode:lighten;
+}
+.card {
+  background: linear-gradient(white,rgba(143,158,42,0.4)) !important;
 }
