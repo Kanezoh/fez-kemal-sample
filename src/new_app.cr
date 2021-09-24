@@ -1,4 +1,4 @@
-require "./models/db.cr"
+require "./models/*"
 
 get "/" do
   articles = Article.fetch_all

@@ -2,6 +2,7 @@
 guard "kemal", path: ".", file: "app.cr" do
   watch("src/new_app.cr")
   watch(%r{src/.*\.ecr})
+  watch(%r{src/models/.*\.cr})
 end
 
 # Watches your sass files
