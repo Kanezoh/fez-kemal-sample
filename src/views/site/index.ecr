@@ -1,6 +1,20 @@
 <h1>かねぞうのブログ</h1>
 <p>かねぞうのブログです</p>
-<button type="button" class="btn btn-primary">Primary</button>
-<% articles.each do |article| %>
-<%= article["name"] %>
-<% end %>
+<div class="container">
+  <% articles.each do |article| %>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-4 d-flex align-items-center">
+            <img src="/470_color.svg" class="thumbnail img-fluid" />
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with sup</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  <% end %>
+</div>
