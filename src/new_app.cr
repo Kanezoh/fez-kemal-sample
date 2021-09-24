@@ -2,10 +2,10 @@ require "./models/*"
 
 get "/" do
   articles = Article.fetch_all
-  view("site/index")
+  view("articles/index")
 end
 
-get "/new_page" do
+get "/articles/:id" do
   animal = "dog"
-  view("site/test")
+  view("articles/show")
 end
