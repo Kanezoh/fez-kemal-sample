@@ -6,6 +6,5 @@ get "/" do
 end
 
 get "/articles/:id" do
-  animal = "dog"
   view("articles/show")
 end

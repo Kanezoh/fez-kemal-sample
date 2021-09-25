@@ -16,3 +16,8 @@ html {
 .thumbnail {
   max-height: 200px;
 }
+
+.article_link, .article_link:hover, .article_link:active, .article_link:visited, .article_link:focus {
+  color: black;
+  text-decoration: none;
+}
