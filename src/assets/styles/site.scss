@@ -14,7 +14,7 @@ html {
 }
 
 .thumbnail {
-  max-height: 200px;
+  max-height: 130px;
 }
 
 .article_link, .article_link:hover, .article_link:active, .article_link:visited, .article_link:focus {
@@ -24,4 +24,25 @@ html {
 
 .article_content {
   background-color: #f4f5f6;
+}
+
+.card-title {
+  font-size: 18px !important;
+}
+
+.card-body {
+  padding: 10px !important;
+  padding-bottom: 0px !important;
+}
+
+.card-description {
+  font-size: 12px !important;
+  color: grey;
+}
+
+.card-created_at {
+  text-align: right;
+}
+.card-created_at .text-muted {
+  color: black !important;
 }
