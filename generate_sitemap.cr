@@ -5,6 +5,7 @@ require "./config.cr"
 # Configure sitemapper
 Sitemapper.configure do |c|
   c.host = "https://kanezoh.herokuapp.com"
+  c.compress = false
 end
 
 # Use sitemapper
