@@ -32,4 +32,15 @@ class Article
       end
     end
   end
+
+  def self.all_ids
+    ids = [] of Int32
+    DB.open ENV["CLEARDB_DATABASE_URL"] do |db|
+      rs = db.query "select id from articles"
+      rs.each do
+        ids << rs.read(Int32)
+      end
+    end
+    ids
+  end
 end

@@ -1,3 +1,4 @@
+require "xml"
 require "./models/*"
 
 get "/" do
@@ -15,4 +16,8 @@ get "/articles/:id" do |env|
     title = "哲学と技術の次元 | #{article["title"]}"
     view("articles/show")
   end
+end
+
+get "/sitemap.xml.gz" do |env|
+  sitemap = File.read("public/sitemap.xml.gz")
 end
