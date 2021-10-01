@@ -18,6 +18,6 @@ get "/articles/:id" do |env|
   end
 end
 
-get "/sitemap.xml" do |env|
+get "/sitemap" do |env|
   env.redirect "https://kanezoh-blog-bucket.s3.us-east-2.amazonaws.com/sitemaps/sitemap.xml"
 end
