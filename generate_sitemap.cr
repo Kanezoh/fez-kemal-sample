@@ -6,6 +6,7 @@ require "./config.cr"
 Sitemapper.configure do |c|
   c.storage = :aws
   c.host = "https://kanezoh.herokuapp.com"
+  c.compress = false
 
   # This option is important!
   c.aws_config = {
