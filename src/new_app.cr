@@ -14,7 +14,7 @@ get "/articles/:id" do |env|
   if article.nil?
     render_404
   else
-    title = "哲学と技術の次元 | #{article["title"]}"
+    title = "#{article["title"]} | 哲学と技術の次元"
     ogp_str = ogp_tag("articles/#{id}", title, article["content_summary"], article["img_url"])
     view("articles/show")
   end
