@@ -4,7 +4,7 @@ class Article
   def self.fetch_all
     articles = [] of Hash(String, Int32|String)
     DB.open ENV["DB_STR"] do |db|
-      rs = db.query "select id, title, content_summary, img_url, created_at from articles"
+      rs = db.query "select id, title, content_summary, img_url, created_at from articles ORDER BY created_at DESC;"
       rs.each do
         articles << {
           "id" => rs.read(Int32),
