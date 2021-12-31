@@ -5,6 +5,7 @@ title VARCHAR(255) NOT NULL,
 content MEDIUMTEXT NOT NULL,
 content_summary VARCHAR(255) NOT NULL,
 img_url VARCHAR(255),
+title_hash VARCHAR(255),
 created_at DATETIME default current_timestamp NOT NULL,
 updated_at timestamp default current_timestamp on update current_timestamp NOT NULL,
 PRIMARY KEY(id)
